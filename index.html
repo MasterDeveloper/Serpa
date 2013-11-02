@@ -40,17 +40,14 @@
 		  $('#nav').onePageNav();
 		  
 		  	
-			$("#thumbnail a").click (function () {
-				var newContents = $(this).attr('href').slice(1);			
-				$('.slider-overlay').fadeOut();
-				$('#'+newContents).fadeIn();
-				return false;
-			});
+
+			
 		  
 			$(".cancel").click (function () {
 				$(this).parents('.slider-overlay').fadeOut();
 				return false;
 			});
+			
 		});
     </script>
     
@@ -308,53 +305,139 @@
                 </div>
             </div>
             <div class="slider-wrap thumbs-slider-wrap">
-                <ul class="slider-3">
-                    <li>
-                        <div class="clearfix content-width">
-                            <div class="left-content">
-                                <img src="images/slide-2.jpg" alt="">
-                            </div>
-                            <div class="right-content">
-                                <h3>Brand <br>Stories</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus. Aenean viverra malesuada libero. Fusce ac quam. Donec neque. Nunc venenatis enim nec quam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. </p>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem.</p>
-                                <a href="#" class="btn btn-yellow">Visit Site</a>
-                            </div><!-- right-content -->
-                        </div><!-- clearfix -->
-                    </li>
-                    <li>
-                        <div class="clearfix content-width">
-                            <div class="left-content">
-                                <img src="images/slide-2.jpg" alt="">
-                            </div>
-                            <div class="right-content">
-                                <h3>Brand <br>Stories</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus. Aenean viverra malesuada libero. Fusce ac quam. Donec neque. Nunc venenatis enim nec quam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. </p>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem.</p>
-                                <a href="#" class="btn btn-yellow">Visit Site</a>
-                            </div><!-- right-content -->
-                        </div><!-- clearfix -->
-                    </li>
-                </ul>
+            	<a href="#" class="controls-slide go-prev"></a>
+                <a href="#" class="controls-slide go-next"></a>
+                <div class="clearfix content-width tab-content" id="tab-1" style="display:block">
+                    <div class="left-content">
+                        <ul class="slider-3">
+                            <li><img src="images/slide-2.jpg" alt=""></li>
+                            <li><img src="images/slide-2.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="right-content">
+                        <h3>Brand <br>Stories</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus. Aenean viverra malesuada libero. Fusce ac quam. Donec neque. Nunc venenatis enim nec quam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem.</p>
+                        <a href="#" class="btn btn-yellow">Visit Site</a>
+                    </div><!-- right-content -->
+                </div><!-- clearfix -->
+                <div class="clearfix content-width tab-content" id="tab-2">
+                    <div class="left-content">
+                        <ul class="slider-3">
+                            <li><img src="images/slide-2.jpg" alt=""></li>
+                            <li><img src="images/slide-2.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="right-content">
+                        <h3>Brand <br>Stories</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus. Aenean viverra malesuada libero. Fusce ac quam. Donec neque. Nunc venenatis enim nec quam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem.</p>
+                        <a href="#" class="btn btn-yellow">Visit Site</a>
+                    </div><!-- right-content -->
+                </div><!-- clearfix -->
+                <div class="clearfix content-width tab-content" id="tab-3">
+                    <div class="left-content">
+                        <ul class="slider-3">
+                            <li><img src="images/slide-2.jpg" alt=""></li>
+                            <li><img src="images/slide-2.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="right-content">
+                        <h3>Brand <br>Stories</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus. Aenean viverra malesuada libero. Fusce ac quam. Donec neque. Nunc venenatis enim nec quam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem.</p>
+                        <a href="#" class="btn btn-yellow">Visit Site</a>
+                    </div><!-- right-content -->
+                </div><!-- clearfix -->
+                <div class="clearfix content-width tab-content" id="tab-4">
+                    <div class="left-content">
+                        <ul class="slider-3">
+                            <li><img src="images/slide-2.jpg" alt=""></li>
+                            <li><img src="images/slide-2.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="right-content">
+                        <h3>Brand <br>Stories</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus. Aenean viverra malesuada libero. Fusce ac quam. Donec neque. Nunc venenatis enim nec quam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem.</p>
+                        <a href="#" class="btn btn-yellow">Visit Site</a>
+                    </div><!-- right-content -->
+                </div><!-- clearfix -->
+                <div class="clearfix content-width tab-content" id="tab-5">
+                    <div class="left-content">
+                        <ul class="slider-3">
+                            <li><img src="images/slide-2.jpg" alt=""></li>
+                            <li><img src="images/slide-2.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="right-content">
+                        <h3>Brand <br>Stories</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus. Aenean viverra malesuada libero. Fusce ac quam. Donec neque. Nunc venenatis enim nec quam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem.</p>
+                        <a href="#" class="btn btn-yellow">Visit Site</a>
+                    </div><!-- right-content -->
+                </div><!-- clearfix -->
+                <div class="clearfix content-width tab-content" id="tab-6">
+                    <div class="left-content">
+                        <ul class="slider-3">
+                            <li><img src="images/slide-2.jpg" alt=""></li>
+                            <li><img src="images/slide-2.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="right-content">
+                        <h3>Brand <br>Stories</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus. Aenean viverra malesuada libero. Fusce ac quam. Donec neque. Nunc venenatis enim nec quam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem.</p>
+                        <a href="#" class="btn btn-yellow">Visit Site</a>
+                    </div><!-- right-content -->
+                </div><!-- clearfix -->
+                <div class="clearfix content-width tab-content" id="tab-7">
+                    <div class="left-content">
+                        <ul class="slider-3">
+                            <li><img src="images/slide-2.jpg" alt=""></li>
+                            <li><img src="images/slide-2.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="right-content">
+                        <h3>Brand <br>Stories</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus. Aenean viverra malesuada libero. Fusce ac quam. Donec neque. Nunc venenatis enim nec quam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem.</p>
+                        <a href="#" class="btn btn-yellow">Visit Site</a>
+                    </div><!-- right-content -->
+                </div><!-- clearfix -->
+                <div class="clearfix content-width tab-content" id="tab-8">
+                    <div class="left-content">
+                        <ul class="slider-3">
+                            <li><img src="images/slide-2.jpg" alt=""></li>
+                            <li><img src="images/slide-2.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="right-content">
+                        <h3>Brand <br>Stories</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus. Aenean viverra malesuada libero. Fusce ac quam. Donec neque. Nunc venenatis enim nec quam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem.</p>
+                        <a href="#" class="btn btn-yellow">Visit Site</a>
+                    </div><!-- right-content -->
+                </div><!-- clearfix -->
             </div>
             <div class="content-width">
                 <div class="thumbnails clearfix" id="thumbnail">
-                    <div class="thumb-circle">
-                        <a href="#content-1"><img src="images/circle-1.png" alt="">
+                    <div class="thumb-circle active">
+                        <a href="#tab-1"><img src="images/circle-1.png" alt="">
                         <span class="overlay"></span>
                         <div class="thumb-hover">
                             <h4>Brand Stories</h4>
                         </div></a>
                     </div>
                     <div class="thumb-circle">
-                        <a href="#content-2"><img src="images/circle-2.png" alt="">
+                        <a href="#tab-2"><img src="images/circle-2.png" alt="">
                         <span class="overlay"></span>
                         <div class="thumb-hover">
                             <h4>Brand Stories</h4>
                         </div></a>
                     </div>
                     <div class="thumb-circle">
-                        <a href="#content-3"><img src="images/circle-3.png" alt="">
+                        <a href="#tab-3"><img src="images/circle-3.png" alt="">
                         <span class="overlay"></span>
                         <div class="thumb-hover">
                             <h4>Brand Stories</h4>
@@ -362,21 +445,21 @@
                         </a>
                     </div>
                     <div class="thumb-circle">
-                        <a href="#content-4"><img src="images/circle-1.png" alt="">
+                        <a href="#tab-4"><img src="images/circle-1.png" alt="">
                         <span class="overlay"></span>
                         <div class="thumb-hover">
                             <h4>Brand Stories 1</h4>
                         </div></a>
                     </div>
                     <div class="thumb-circle">
-                        <a href="#content-5"><img src="images/circle-2.png" alt="">
+                        <a href="#tab-5"><img src="images/circle-2.png" alt="">
                         <span class="overlay"></span>
                         <div class="thumb-hover">
                             <h4>Brand Stories</h4>
                         </div></a>
                     </div>
                     <div class="thumb-circle">
-                        <a href="#content-6"><img src="images/circle-3.png" alt="">
+                        <a href="#tab-6"><img src="images/circle-3.png" alt="">
                         <span class="overlay"></span>
                         <div class="thumb-hover">
                             <h4>Brand Stories</h4>
@@ -384,7 +467,7 @@
                         </a>
                     </div>
                     <div class="thumb-circle">
-                        <a href="#content-7"><img src="images/circle-1.png" alt="">
+                        <a href="#tab-7"><img src="images/circle-1.png" alt="">
                         <span class="overlay"></span>
                         <div class="thumb-hover">
                             <h4>Brand Stories</h4>
@@ -392,7 +475,7 @@
                         </a>
                     </div>
                      <div class="thumb-circle">
-                        <a href="#content-8"><img src="images/circle-2.png" alt="">
+                        <a href="#tab-8"><img src="images/circle-2.png" alt="">
                         <span class="overlay"></span>
                         <div class="thumb-hover">
                             <h4>Brand Stories</h4>
@@ -413,127 +496,6 @@
                     <a href="#"><img src="images/mono-6.png" alt=""></a>
                 </div>
             </div><!-- content-width -->
-            
-            
-            
-            
-            
-            
-            <div class="slider-overlay" id="content-1">
-            	<a href="#" class="cancel">x</a>
-            	<h3>Development 1</h3>
-                <div class="wrap clearfix">
-                	<div class="circle-photo"><img src="images/circle-1.png" alt=""></div>
-                    <div class="circle-info">
-                    	<p>
-                        	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec,
-auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus.
-                        </p>
-                        <p>
-                        	circle-1 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus. Aenean viverra malesuada libero. Fusce ac quam. Donec neque. Nunc
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="slider-overlay" id="content-2">
-            	<a href="#" class="cancel">x</a>
-            	<h3>Development 2</h3>
-                <div class="wrap clearfix">
-                	<div class="circle-photo"><img src="images/circle-2.png" alt=""></div>
-                    <div class="circle-info">
-                    	<p>
-                        	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec,
-auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus.
-                        </p>
-                        <p>
-                        	circle-1 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus. Aenean viverra malesuada libero. Fusce ac quam. Donec neque. Nunc
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="slider-overlay" id="content-3">
-            	<a href="#" class="cancel">x</a>
-            	<h3>Development 3</h3>
-                <div class="wrap clearfix">
-                	<div class="circle-photo"><img src="images/circle-3.png" alt=""></div>
-                    <div class="circle-info">
-                    	<p>
-                        	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec,
-auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-overlay" id="content-4">
-            	<a href="#" class="cancel">x</a>
-            	<h3>Development 4</h3>
-                <div class="wrap clearfix">
-                	<div class="circle-photo"><img src="images/circle-3.png" alt=""></div>
-                    <div class="circle-info">
-                    	<p>
-                        	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec,
-auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-overlay" id="content-5">
-            	<a href="#" class="cancel">x</a>
-            	<h3>Development 5</h3>
-                <div class="wrap clearfix">
-                	<div class="circle-photo"><img src="images/circle-3.png" alt=""></div>
-                    <div class="circle-info">
-                    	<p>
-                        	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec,
-auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-overlay" id="content-6">
-            	<a href="#" class="cancel">x</a>
-            	<h3>Development 6</h3>
-                <div class="wrap clearfix">
-                	<div class="circle-photo"><img src="images/circle-3.png" alt=""></div>
-                    <div class="circle-info">
-                    	<p>
-                        	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec,
-auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-overlay" id="content-7">
-            	<a href="#" class="cancel">x</a>
-            	<h3>Development 7</h3>
-                <div class="wrap clearfix">
-                	<div class="circle-photo"><img src="images/circle-3.png" alt=""></div>
-                    <div class="circle-info">
-                    	<p>
-                        	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec,
-auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-overlay" id="content-8">
-            	<a href="#" class="cancel">x</a>
-            	<h3>Development 8</h3>
-                <div class="wrap clearfix">
-                	<div class="circle-photo"><img src="images/circle-3.png" alt=""></div>
-                    <div class="circle-info">
-                    	<p>
-                        	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec,
-auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            
         </div><!--out-work -->
         
         

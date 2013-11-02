@@ -19,7 +19,16 @@ $(function(){
 		$('.navigation').stop(true, true).slideToggle()
 		return false;
 	});
-	
+	$("#thumbnail a").click (function () {
+			$('.tab-content').slideUp();
+			$(this.hash).slideDown(function(){
+				$('.slider-3').bxSlider({
+					pager: true
+				});
+			});
+			
+			return false;
+		});	
 });
 
 // navigation
