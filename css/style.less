@@ -568,11 +568,6 @@ ______________________*/
 	margin-right:2em;
 	margin-bottom:2em;
 	.border-radius(50%);
-	&.active{
-		.overlay{	
-			border:5px solid rgba(255,0,0,0.3);
-		}
-	}
 	.overlay{
 		position:absolute;
 		top:5px;
@@ -596,6 +591,7 @@ ______________________*/
 			line-height:1;
 		}
 	}
+	&.active,
 	&:hover{
 		.thumb-hover{
 			transition:all 0.2s ease 0s;

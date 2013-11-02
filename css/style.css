@@ -582,9 +582,6 @@ ______________________*/
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
-.thumb-circle.active .overlay {
-  border: 5px solid rgba(255, 0, 0, 0.3);
-}
 .thumb-circle .overlay {
   position: absolute;
   top: 5px;
@@ -611,6 +608,7 @@ ______________________*/
   color: #ffffff;
   line-height: 1;
 }
+.thumb-circle.active .thumb-hover,
 .thumb-circle:hover .thumb-hover {
   transition: all 0.2s ease 0s;
   top: 0;

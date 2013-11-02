@@ -40,14 +40,14 @@ $(function(){
 	$("#thumbnail a").click (function () {
 		$('.controls-slide').show(0);
 		$('.thumb-circle').removeClass('active');
-		$('.tab-content').stop(true, true).hide();/*.animate({
+		$('.tab-content').stop(true, true).fadeOut(0);/*.animate({
 			height : '0',
 			'min-height': '0',
 			opacity:0.5
 			
 		},0);
 		*/
-		$(this.hash).stop(true, true).show().height('auto');/*.animate({
+		$(this.hash).stop(true, true).fadeIn(600).height('auto').css('opacity', 1);/*.animate({
 			height:		'100%',
 			opacity : 1,
 		},600)
