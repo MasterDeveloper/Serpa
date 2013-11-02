@@ -282,8 +282,8 @@ ______________________*/
   box-shadow: none;
 }
 .thumbs-slider-wrap {
-  min-height: 450px;
   position: relative;
+  transition: all 0.5s ease 0s;
 }
 .thumbs-slider-wrap .left-content {
   width: 640px;
@@ -534,15 +534,9 @@ ______________________*/
   float: left;
   margin-right: 25px;
 }
-.right-content {
-  margin-left: 667px;
-}
 .right-content p {
   font-size: 0.875em;
   margin-bottom: 1.1875em;
-}
-.right-content p + p {
-  margin-bottom: 5em;
 }
 .btn {
   display: inline-block;
@@ -611,7 +605,8 @@ ______________________*/
 }
 /* circle related contents */
 .tab-content {
-  display: none;
+  height: 0;
+  overflow: hidden;
 }
 .section-header h3 {
   font-size: 3.75em;

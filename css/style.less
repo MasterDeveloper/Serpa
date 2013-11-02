@@ -254,8 +254,8 @@ ______________________*/
 		
 
 .thumbs-slider-wrap{
-	min-height:450px;
 	position:relative;
+	transition:all 0.5s ease 0s;
 	.left-content{
 		width:640px;
 	}
@@ -521,15 +521,10 @@ ______________________*/
 	margin-right:25px;
 }
 .right-content{
-	margin-left:642px + 25px;
-		p{
-			font-size:14px / @fontSize * 1em;
- 			margin-bottom:	19px / @fontSize * 1em;
-			& + p{
-				margin-bottom:	80px / @fontSize * 1em;
-			}
-
-		}
+	p{
+		font-size:14px / @fontSize * 1em;
+		margin-bottom:	19px / @fontSize * 1em;
+	}
 }
 .btn{
 	display:inline-block;
@@ -597,7 +592,8 @@ ______________________*/
 }
 /* circle related contents */
 .tab-content{
-	display:none;
+	height:0;
+	overflow:hidden;
 }
 
 
