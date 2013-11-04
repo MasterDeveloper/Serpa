@@ -197,16 +197,15 @@ ______________________*/
 			background-position: -3px -45px;
 			top:auto;
 			bottom: 95px;
-			left: 50%;
-			margin-left: 520px;
+			right:25px;
 		}
 		.bx-prev{
 			background:url(../images/bg_direction_nav.png) no-repeat #000;
 			background-position: -3px -5px;
 			top:auto;
 			bottom: 95px;
-			left: 50%;
-			margin-left: 483px;
+			left:auto;
+			right:65px;
 		}
 		.bx-start{
 			background:url(../images/pause-play-theme-default.png) no-repeat #000;
@@ -230,10 +229,11 @@ ______________________*/
 		}
 	}
 	.bx-controls-auto{
-		width: 960px !important;
-		left:50%;
+		width: auto !important;
 		bottom:90px;
-		margin-left:-480px;
+		right:0;
+		left:0;
+		padding-right:100px;
 		text-align:right;
 		a{
 			overflow:hidden;
@@ -257,7 +257,8 @@ ______________________*/
 	position:relative;
 	transition:all 0.5s ease 0s;
 	.left-content{
-		width:640px;
+		width:100%;
+		max-width:640px;
 	}
 	.controls-slide{
 		height: 32px;
@@ -270,6 +271,7 @@ ______________________*/
 		position: absolute;
 		top: 50%;
 		width: 32px;
+		z-index:999;
 	}
 	.go-prev{
 			background:url(../images/bg_direction_nav.png) no-repeat #000;
@@ -292,16 +294,6 @@ ______________________*/
 		position:relative;
 	}
 
-	.bx-wrapper {
-		.bx-prev{
-			background:url(../images/bg_direction_nav.png) no-repeat #000;
-			background-position: -3px -5px;
-		}
-		.bx-next{
-			background:url(../images/bg_direction_nav.png) no-repeat #000;
-			background-position: -3px -45px;
-		}
-	}
 }
 .slider-testimonial{
 	position:relative;
@@ -555,9 +547,13 @@ ______________________*/
 		background: @yellow - #111;
 	}
 }
+.thumbnails-wrap{
+	overflow:hidden;
+}
 .thumbnails{
 	margin-right: -2em;
 }
+
 #our-clients{
 	padding-top: 3em;
 }
@@ -797,26 +793,6 @@ h1{
 	}
 	.bx-wrapper {
 		margin:0 auto;
-		.bx-next{
-			background:url(../images/bg_direction_nav.png) no-repeat #000;
-			background-position: -3px -45px;
-			top:auto;
-			bottom: 95px;
-			left: 50%;
-			margin-left: 320px;
-		}
-		.bx-prev{
-			background:url(../images/bg_direction_nav.png) no-repeat #000;
-			background-position: -3px -5px;
-			top:auto;
-			bottom: 95px;
-			left: 50%;
-			margin-left: 283px;
-		}
-	}
-	.bx-controls-auto{
-		width: 750px !important;
-		margin-left:-470px;
 	}
 	
 }
@@ -981,11 +957,14 @@ br,
 	float:none;
 	width:auto;
 }
+h1,h2{
+	font-size:3em;
+}
+
 }
 @media (max-width: 479px) {
 .contact-form input{
-	width:240px;}
-h1,h2{
-	font-size:3em;
+	width:222px;
+	
 }
 }
